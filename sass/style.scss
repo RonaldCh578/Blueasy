@@ -1,0 +1,504 @@
+@import 'fonts';
+@import 'vars';
+@import 'media-queries';
+
+body{
+    font-family: 'NotoItalic';
+    //padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.general_container{
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    line-height: 1.7em;
+}
+
+
+//Start top bar
+.bg_top_bar{
+    background: $dark-bg;
+    opacity: 80%;
+    position: fixed;
+    width: 100%;
+}
+
+.overline{
+    background: $nav-bg;
+    padding: 0 .5em;
+}
+
+.top_bar{
+    font-family: 'NotoBold';
+}
+
+.link_logo{
+    display: block;
+    margin: 0em;
+    padding: 1.5em 0;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.white_logo{
+    text-transform: uppercase;
+    color: $white-copy;
+    text-decoration: none;
+}
+
+.blue_logo{
+    text-transform: uppercase;
+    color: $light-blue;
+    text-decoration: none;
+}
+
+.top_nav{
+    margin: 2em 0;
+    padding: .55em;
+    right: 0.1em;
+    float: right;
+    color: $white-copy;
+}
+
+.top_item{
+    display: inline;
+}
+
+.top_link{
+    margin: 0;
+    padding: 0 1.1em;
+    text-decoration: none;
+    font-size: .8em;
+    color: $white-copy;
+}
+
+.btn_home{
+    text-decoration: none;
+    border: .2em $light-blue solid;
+    color: $light-blue;
+}
+
+
+//Start intro
+.bg_header{
+    background: url(../imgs/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header_container{
+    margin: 0;
+    padding: 5em 0;
+    font-family: 'NotoLight';
+    font-size: 2em;
+    text-align: center;
+    color: $white-copy;
+}
+
+.header_text{
+    margin: 0;
+    padding: 0;
+    //background: $dark-bg;
+    opacity: 50%;
+    font-family: 'NotoLight';
+    text-transform: uppercase;
+}
+
+
+//Start services
+.bg_services{
+    background: $light-blue;
+}
+
+.services_title{
+    margin: 0;
+    padding: 1.5em 1em .2em 0;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $white-copy;
+    &::after{
+        content: '';
+        display: block;
+        width: 1.5em;
+        padding-top: .25em;
+        border-bottom: 3px solid $white-copy;
+    }
+}
+
+.services_icon{
+    margin: 0;
+    padding: .7em .7em .4em 0;
+    font-size: .4em;
+    color: $white-copy;
+}
+
+.service{
+    margin: 0;
+    padding: .3em 0 0 0;
+    font-size: 1.2em;
+    font-family: 'NotoRegular';
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.service_description{
+    margin: 0;
+    padding: .7em 0 6em 0;
+    font-size: .7em;
+    font-family: 'NotoRegular';
+    color: $white-copy;
+}
+
+
+//Start portfolio
+.bg_portfolio{
+    background: $white-copy;
+}
+
+.portfolio_title{
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 0;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $nav-bg;
+}
+
+.container_portfolio_nav{
+    margin: 2.6em 0;
+    padding: 0.3em;
+    right: 0em;
+    float: right;
+    color: $white-copy;
+}
+
+.portfolio_nav{
+    margin: 0em;
+    padding: 0em;
+    right: 0.1em;
+    float: right;
+    color: $nav-bg;
+}
+
+.portfolio_item{
+    display: inline;
+}
+
+.portfolio_link{
+    margin: 0;
+    padding: 0.5em .99em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'NotoBold';
+    font-size: .8em;
+    color: $nav-bg;
+}
+
+.btn_all_portfolio{
+    border: $light-blue .2em solid;
+    color: $light-blue;
+}
+
+.portfolio_img{
+    margin: .5em;
+    padding: 0;
+    height: 12em;
+    width: 14em;
+    object-fit: cover;
+    object-position: center center;
+    @include respond-to($phone){
+        height: 12em;
+        width: 18em;
+    }
+}
+
+.portfolio_img_container{
+    margin: 0 0 4em 0;
+    padding: 0;
+}
+
+
+//Start Default Section
+.bg_defSection{
+    background: $nav-bg;
+}
+
+.def_sect_title{
+    margin: 4em 0 .5em 0;
+    padding: 0 0 .5em 0;
+    font-size: 1.5em;
+    font-family: 'NotoLight';
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.def_sect_text{
+    margin: 0;
+    padding: 0 .5em 3em 0;
+    font-family: 'NotoRegular';
+    font-size: 0.875em;
+    color: $white-copy;
+}
+
+.visitMe_buttom{
+    margin: .5em 0;
+    padding: .7em 1.2em;
+    font-family: 'NotoBold';
+    font-size: 0.875em;
+    text-decoration: none;
+    border: $visit-me-color .2em solid;
+    color: $visit-me-color;
+}
+
+.video{
+    margin: 5em 0;
+    @include respond-to($phone){
+        width: 320px;
+    }
+}
+
+
+//Start twitter
+.bg_twitter{
+    background: $light-blue;
+}
+
+.twitter_title{
+    margin: 2em 0 0 0;
+    padding: 0;
+    width: 50%;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.twitter_icon{
+    margin: 0;
+    padding: 2em 0 0 0;
+    right: 0;
+    float: right;
+    font-size: 1.7em;
+    color: $white-copy;
+}
+
+.twitter_text{
+    margin: 0;
+    padding: 1.5em 0 2.3em 0;
+    font-family: 'NotoRegular';
+    font-size: 1.2em;
+    color: $white-copy;
+}
+
+
+//Start Who is section
+.bg_who_is{
+    background: url(../imgs/camera.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.who_title{
+    margin: 3em 0 0 0;
+    padding: 0;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.who_text_left{
+    margin: 3em 0 5em 0;
+    padding: 0;
+    font-family: 'NotoRegular';
+    font-size: .7em;
+    color: $white-copy;
+}
+
+.who_text_right{
+    margin: 7em 1em 3em 1em;
+    padding: 0;
+    font-family: 'NotoRegular';
+    font-size: .7em;
+    color: $white-copy;
+}
+
+.who_nav{
+    margin: 0;
+    padding: 0;
+    font-size: .7em;
+    text-decoration: none;
+    color: $white-copy;
+}
+
+.who_item{
+    display: inline;
+}
+
+.who_icon{
+    margin: .5em;
+    padding: .5em;
+    font-size: 2em;
+    border: $white-copy .1em solid;
+    color: $white-copy;
+}
+
+
+//Start testimonials
+.bg_testimonials{
+    background: $white-copy;
+}
+
+.testimonials_title{
+    margin: 2em 0 1em 0;
+    padding: 0;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $nav-bg;
+}
+
+.tesimonials_icon{
+    margin: 2.6em 0 0 0;
+    padding: 0;
+    font-size: 1.7em;
+    right: 0;
+    float: right;
+    color: $nav-bg;
+}
+
+.testimonials_text{
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-family: 'NotoRegular';
+    font-size: 1em;
+    color: $nav-bg;
+}
+
+.testimonials_tex_sec{
+    margin: 0 0 3em 0;
+    padding: 0;
+    font-family: 'NotoBold';
+    font-size: .8em;
+    color: $light-blue;
+}
+
+
+//Start form
+.bg_contact{
+    background: url(../imgs/contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_title{
+    margin: 3em 0 .7em 0;
+    padding: 0;
+    font-family: 'NotoLight';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.contact_input{
+    margin: 0 0 .5em 0;
+    padding: .5em;
+    width: 100%;
+    border: .15em $white-copy solid;
+    background: none;
+    font-family: 'NotoRegular';
+}
+
+.contact_message{
+    margin: 0 0 .5em 0;
+    padding: 3em;
+    width: 100%;
+    border: .15em $white-copy solid;
+    background: none;
+    font-family: 'NotoRegular';
+}
+
+.lbl_name{
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoBold';
+    font-size: .8em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.lbl_mail{
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoBold';
+    font-size: .8em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.lbl_message{
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoBold';
+    font-size: .8em;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.contact_submit{
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 1em 4em;
+    background: $light-blue;
+    font-family: 'NotoBold';
+    font-size: 1.3em;
+    border: 0;
+    color: $white-copy;
+}
+
+.contact_text{
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoRegular';
+    font-size: .6em;
+    color: $white-copy;
+}
+
+
+//Start footer
+.bg_footer{
+    background: $dark-bg;
+}
+
+.footer_nav{
+    margin: 3em 0;
+    padding: 0;
+}
+
+.footer_item{
+    display: inline;
+}
+
+.footer_link{
+    margin: 0;
+    padding: 1em;
+    font-family: 'NotoLight';
+    font-size: .7em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-copy;
+}
+
+.footer_year{
+    margin: 3em 0;
+    padding: 1em;
+    font-family: 'NotoRegular';
+    font-size: .7em;
+    right: 0;
+    float: right;
+    color: $white-copy;
+}

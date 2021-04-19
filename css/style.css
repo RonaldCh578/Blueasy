@@ -1,0 +1,509 @@
+@font-face {
+  font-family: "NotoBold";
+  src: url("../fonts/notosans-bold-webfont.eot");
+  src: url("../fonts/notosans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-bold-webfont.woff2") format("woff2"), url("../fonts/notosans-bold-webfont.woff") format("woff"), url("../fonts/notosans-bold-webfont.ttf") format("truetype"), url("../fonts/notosans-bold-webfont.svg#noto_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoItalic";
+  src: url("../fonts/notosans-italic-webfont.eot");
+  src: url("../fonts/notosans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-italic-webfont.woff2") format("woff2"), url("../fonts/notosans-italic-webfont.woff") format("woff"), url("../fonts/notosans-italic-webfont.ttf") format("truetype"), url("../fonts/notosans-italic-webfont.svg#noto_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoRegular";
+  src: url("../fonts/notosans-regular-webfont.eot");
+  src: url("../fonts/notosans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/notosans-regular-webfont.woff2") format("woff2"), url("../fonts/notosans-regular-webfont.woff") format("woff"), url("../fonts/notosans-regular-webfont.ttf") format("truetype"), url("../fonts/notosans-regular-webfont.svg#noto_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoLight";
+  src: url("../fonts/notosans-light-webfont.woff2") format("woff2"), url("../fonts/notosans-light-webfont.woff") format("woff"), url("../fonts/notosans-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "NotoItalic";
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.general_container {
+  margin: auto;
+  padding: 0;
+  width: 75%;
+  line-height: 1.7em;
+}
+
+.bg_top_bar {
+  background: #353f46;
+  opacity: 80%;
+  position: fixed;
+  width: 100%;
+}
+
+.overline {
+  background: rgba(53, 63, 70, 0.7);
+  padding: 0 0.5em;
+}
+
+.top_bar {
+  font-family: "NotoBold";
+}
+
+.link_logo {
+  display: block;
+  margin: 0em;
+  padding: 1.5em 0;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.white_logo {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blue_logo {
+  text-transform: uppercase;
+  color: #4bcaff;
+  text-decoration: none;
+}
+
+.top_nav {
+  margin: 2em 0;
+  padding: 0.55em;
+  right: 0.1em;
+  float: right;
+  color: #fff;
+}
+
+.top_item {
+  display: inline;
+}
+
+.top_link {
+  margin: 0;
+  padding: 0 1.1em;
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.btn_home {
+  text-decoration: none;
+  border: 0.2em #4bcaff solid;
+  color: #4bcaff;
+}
+
+.bg_header {
+  background: url(../imgs/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header_container {
+  margin: 0;
+  padding: 5em 0;
+  font-family: "NotoLight";
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+.header_text {
+  margin: 0;
+  padding: 0;
+  opacity: 50%;
+  font-family: "NotoLight";
+  text-transform: uppercase;
+}
+
+.bg_services {
+  background: #4bcaff;
+}
+
+.services_title {
+  margin: 0;
+  padding: 1.5em 1em 0.2em 0;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.services_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
+}
+
+.services_icon {
+  margin: 0;
+  padding: 0.7em 0.7em 0.4em 0;
+  font-size: 0.4em;
+  color: #fff;
+}
+
+.service {
+  margin: 0;
+  padding: 0.3em 0 0 0;
+  font-size: 1.2em;
+  font-family: "NotoRegular";
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.service_description {
+  margin: 0;
+  padding: 0.7em 0 6em 0;
+  font-size: 0.7em;
+  font-family: "NotoRegular";
+  color: #fff;
+}
+
+.bg_portfolio {
+  background: #fff;
+}
+
+.portfolio_title {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.container_portfolio_nav {
+  margin: 2.6em 0;
+  padding: 0.3em;
+  right: 0em;
+  float: right;
+  color: #fff;
+}
+
+.portfolio_nav {
+  margin: 0em;
+  padding: 0em;
+  right: 0.1em;
+  float: right;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.portfolio_item {
+  display: inline;
+}
+
+.portfolio_link {
+  margin: 0;
+  padding: 0.5em 0.99em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "NotoBold";
+  font-size: 0.8em;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.btn_all_portfolio {
+  border: #4bcaff 0.2em solid;
+  color: #4bcaff;
+}
+
+.portfolio_img {
+  margin: 0.5em;
+  padding: 0;
+  height: 12em;
+  width: 14em;
+  object-fit: cover;
+  object-position: center center;
+}
+@media only screen and (max-width: 480px) {
+  .portfolio_img {
+    height: 12em;
+    width: 18em;
+  }
+}
+
+.portfolio_img_container {
+  margin: 0 0 4em 0;
+  padding: 0;
+}
+
+.bg_defSection {
+  background: rgba(53, 63, 70, 0.7);
+}
+
+.def_sect_title {
+  margin: 4em 0 0.5em 0;
+  padding: 0 0 0.5em 0;
+  font-size: 1.5em;
+  font-family: "NotoLight";
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.def_sect_text {
+  margin: 0;
+  padding: 0 0.5em 3em 0;
+  font-family: "NotoRegular";
+  font-size: 0.875em;
+  color: #fff;
+}
+
+.visitMe_buttom {
+  margin: 0.5em 0;
+  padding: 0.7em 1.2em;
+  font-family: "NotoBold";
+  font-size: 0.875em;
+  text-decoration: none;
+  border: #06090b 0.2em solid;
+  color: #06090b;
+}
+
+.video {
+  margin: 5em 0;
+}
+@media only screen and (max-width: 480px) {
+  .video {
+    width: 320px;
+  }
+}
+
+.bg_twitter {
+  background: #4bcaff;
+}
+
+.twitter_title {
+  margin: 2em 0 0 0;
+  padding: 0;
+  width: 50%;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.twitter_icon {
+  margin: 0;
+  padding: 2em 0 0 0;
+  right: 0;
+  float: right;
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.twitter_text {
+  margin: 0;
+  padding: 1.5em 0 2.3em 0;
+  font-family: "NotoRegular";
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.bg_who_is {
+  background: url(../imgs/camera.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.who_title {
+  margin: 3em 0 0 0;
+  padding: 0;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.who_text_left {
+  margin: 3em 0 5em 0;
+  padding: 0;
+  font-family: "NotoRegular";
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.who_text_right {
+  margin: 7em 1em 3em 1em;
+  padding: 0;
+  font-family: "NotoRegular";
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.who_nav {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.who_item {
+  display: inline;
+}
+
+.who_icon {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 2em;
+  border: #fff 0.1em solid;
+  color: #fff;
+}
+
+.bg_testimonials {
+  background: #fff;
+}
+
+.testimonials_title {
+  margin: 2em 0 1em 0;
+  padding: 0;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.tesimonials_icon {
+  margin: 2.6em 0 0 0;
+  padding: 0;
+  font-size: 1.7em;
+  right: 0;
+  float: right;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.testimonials_text {
+  margin: 0 0 1em 0;
+  padding: 0;
+  font-family: "NotoRegular";
+  font-size: 1em;
+  color: rgba(53, 63, 70, 0.7);
+}
+
+.testimonials_tex_sec {
+  margin: 0 0 3em 0;
+  padding: 0;
+  font-family: "NotoBold";
+  font-size: 0.8em;
+  color: #4bcaff;
+}
+
+.bg_contact {
+  background: url(../imgs/contact.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact_title {
+  margin: 3em 0 0.7em 0;
+  padding: 0;
+  font-family: "NotoLight";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact_input {
+  margin: 0 0 0.5em 0;
+  padding: 0.5em;
+  width: 100%;
+  border: 0.15em #fff solid;
+  background: none;
+  font-family: "NotoRegular";
+}
+
+.contact_message {
+  margin: 0 0 0.5em 0;
+  padding: 3em;
+  width: 100%;
+  border: 0.15em #fff solid;
+  background: none;
+  font-family: "NotoRegular";
+}
+
+.lbl_name {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoBold";
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lbl_mail {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoBold";
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lbl_message {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoBold";
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact_submit {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 1em 4em;
+  background: #4bcaff;
+  font-family: "NotoBold";
+  font-size: 1.3em;
+  border: 0;
+  color: #fff;
+}
+
+.contact_text {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoRegular";
+  font-size: 0.6em;
+  color: #fff;
+}
+
+.bg_footer {
+  background: #353f46;
+}
+
+.footer_nav {
+  margin: 3em 0;
+  padding: 0;
+}
+
+.footer_item {
+  display: inline;
+}
+
+.footer_link {
+  margin: 0;
+  padding: 1em;
+  font-family: "NotoLight";
+  font-size: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer_year {
+  margin: 3em 0;
+  padding: 1em;
+  font-family: "NotoRegular";
+  font-size: 0.7em;
+  right: 0;
+  float: right;
+  color: #fff;
+}
