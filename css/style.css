@@ -63,6 +63,11 @@ body {
   text-decoration: none;
   font-size: 2em;
 }
+@media only screen and (max-width: 480px) {
+  .link_logo {
+    padding: 1.2em 0 0 0;
+  }
+}
 
 .white_logo {
   text-transform: uppercase;
@@ -82,6 +87,11 @@ body {
   right: 0.1em;
   float: right;
   color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .top_nav {
+    margin: 1.2em 0 1em 0;
+  }
 }
 
 .top_item {
@@ -110,7 +120,7 @@ body {
 
 .header_container {
   margin: 0;
-  padding: 5em 0;
+  padding: 8em 0 5em 0;
   font-family: "NotoLight";
   font-size: 2em;
   text-align: center;
@@ -120,9 +130,9 @@ body {
 .header_text {
   margin: 0;
   padding: 0;
-  opacity: 50%;
   font-family: "NotoLight";
   text-transform: uppercase;
+  line-height: 1.5em;
 }
 
 .bg_services {
@@ -131,7 +141,7 @@ body {
 
 .services_title {
   margin: 0;
-  padding: 1.5em 1em 0.2em 0;
+  padding: 1.5em 1em 0.7em 0;
   font-family: "NotoLight";
   font-size: 1.5em;
   text-transform: uppercase;
@@ -180,6 +190,13 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
   color: rgba(53, 63, 70, 0.7);
+}
+.portfolio_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid rgba(53, 63, 70, 0.7);
 }
 
 .container_portfolio_nav {
@@ -238,7 +255,7 @@ body {
 }
 
 .bg_defSection {
-  background: rgba(53, 63, 70, 0.7);
+  background: #353f46;
 }
 
 .def_sect_title {
@@ -248,6 +265,13 @@ body {
   font-family: "NotoLight";
   text-transform: uppercase;
   color: #fff;
+}
+.def_sect_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
 }
 
 .def_sect_text {
@@ -290,6 +314,13 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
+.twitter_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
+}
 
 .twitter_icon {
   margin: 0;
@@ -321,6 +352,13 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
   color: #fff;
+}
+.who_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
 }
 
 .who_text_left {
@@ -371,6 +409,13 @@ body {
   text-transform: uppercase;
   color: rgba(53, 63, 70, 0.7);
 }
+.testimonials_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid rgba(53, 63, 70, 0.7);
+}
 
 .tesimonials_icon {
   margin: 2.6em 0 0 0;
@@ -410,6 +455,13 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
   color: #fff;
+}
+.contact_title::after {
+  content: "";
+  display: block;
+  width: 1.5em;
+  padding-top: 0.25em;
+  border-bottom: 3px solid #fff;
 }
 
 .contact_input {

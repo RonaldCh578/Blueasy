@@ -2,6 +2,14 @@
 @import 'vars';
 @import 'media-queries';
 
+@mixin title_down_bar ($color) {
+    content: '';
+    display: block;
+    width: 1.5em;
+    padding-top: .25em;
+    border-bottom: 3px solid $color;
+}
+
 body{
     font-family: 'NotoItalic';
     //padding: 0;
@@ -42,6 +50,9 @@ body{
     padding: 1.5em 0;
     text-decoration: none;
     font-size: 2em;
+    @include respond-to($phone){
+        padding: 1.2em 0 0 0;
+    }
 }
 
 .white_logo{
@@ -62,6 +73,9 @@ body{
     right: 0.1em;
     float: right;
     color: $white-copy;
+    @include respond-to($phone){
+        margin: 1.2em 0 1em 0;
+    }
 }
 
 .top_item{
@@ -92,7 +106,7 @@ body{
 
 .header_container{
     margin: 0;
-    padding: 5em 0;
+    padding: 8em 0 5em 0;
     font-family: 'NotoLight';
     font-size: 2em;
     text-align: center;
@@ -102,10 +116,9 @@ body{
 .header_text{
     margin: 0;
     padding: 0;
-    //background: $dark-bg;
-    opacity: 50%;
     font-family: 'NotoLight';
     text-transform: uppercase;
+    line-height: 1.5em;
 }
 
 
@@ -116,17 +129,13 @@ body{
 
 .services_title{
     margin: 0;
-    padding: 1.5em 1em .2em 0;
+    padding: 1.5em 1em .7em 0;
     font-family: 'NotoLight';
     font-size: 1.5em;
     text-transform: uppercase;
     color: $white-copy;
     &::after{
-        content: '';
-        display: block;
-        width: 1.5em;
-        padding-top: .25em;
-        border-bottom: 3px solid $white-copy;
+        @include title_down_bar ($white-copy);
     }
 }
 
@@ -167,6 +176,9 @@ body{
     font-size: 1.5em;
     text-transform: uppercase;
     color: $nav-bg;
+    &::after{
+        @include title_down_bar ($nav-bg);
+    }
 }
 
 .container_portfolio_nav{
@@ -225,7 +237,7 @@ body{
 
 //Start Default Section
 .bg_defSection{
-    background: $nav-bg;
+    background: $dark-bg;
 }
 
 .def_sect_title{
@@ -235,6 +247,9 @@ body{
     font-family: 'NotoLight';
     text-transform: uppercase;
     color: $white-copy;
+    &::after{
+        @include title_down_bar ($white-copy);
+    }
 }
 
 .def_sect_text{
@@ -276,6 +291,9 @@ body{
     font-size: 1.5em;
     text-transform: uppercase;
     color: $white-copy;
+    &::after{
+        @include title_down_bar ($white-copy);
+    }
 }
 
 .twitter_icon{
@@ -310,6 +328,9 @@ body{
     font-size: 1.5em;
     text-transform: uppercase;
     color: $white-copy;
+    &::after{
+        @include title_down_bar ($white-copy);
+    }
 }
 
 .who_text_left{
@@ -361,6 +382,9 @@ body{
     font-size: 1.5em;
     text-transform: uppercase;
     color: $nav-bg;
+    &::after{
+        @include title_down_bar ($nav-bg);
+    }
 }
 
 .tesimonials_icon{
@@ -403,6 +427,9 @@ body{
     font-size: 1.5em;
     text-transform: uppercase;
     color: $white-copy;
+    &::after{
+        @include title_down_bar ($white-copy);
+    }
 }
 
 .contact_input{
